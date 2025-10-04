@@ -1,0 +1,12 @@
+/*
+  This file provides the variables for the dark theme.
+  The .dark class is applied to a parent container.
+*/
+.dark .mdxeditor {
+    --mdxeditor-background-color: #1f2937;
+    --mdxeditor-text-color: #d1d5db;
+    --mdxeditor-border-color: #4b5563;
+    --mdxeditor-toolbar-background-color: #374151;
+    --mdxeditor-toolbar-button-hover-background-color: #4b5563;
+    --mdxeditor-dialog-background-color: #374151;
+}

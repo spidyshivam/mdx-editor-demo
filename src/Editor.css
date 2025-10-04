@@ -1,0 +1,76 @@
+.editor-container {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 0; /* MDXEditor handles internal padding */
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    color: #333;
+    text-align: left;
+    overflow: hidden; /* To contain the rounded corners */
+}
+
+/* Specific styling for the editor's toolbar and content */
+.mdxeditor {
+    font-family: inherit !important;
+    color: inherit !important;
+}
+
+/* The MDXEditor has its own dark mode, let's force light mode for consistency */
+.mdxeditor-root-container {
+    --mdxeditor-background-color: #ffffff;
+    --mdxeditor-text-color: #333;
+    --mdxeditor-border-color: #e0e0e0;
+}
+
+.bottom-section {
+    padding: 1.5rem;
+    background-color: #fcfcfc;
+    border-top: 1px solid #f0f0f0;
+}
+
+.deploy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    float: right;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.deploy-button:hover {
+    background-color: #218838;
+}
+
+.markdown-output {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed #e0e0e0;
+    clear: both;
+}
+
+.markdown-output h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.markdown-output pre {
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    padding: 1.2rem;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}
